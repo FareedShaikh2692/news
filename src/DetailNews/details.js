@@ -1,6 +1,6 @@
 import { Container, Grid } from "@mui/material";
 import { Typography } from "antd";
-import React from "react";
+import React, { useEffect } from "react";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import RecommendedImg from "../assets/images/recommendedimage.jpeg";
 import RecommendedImg1 from "../assets/images/recommendedimage1.jpg";
@@ -10,6 +10,10 @@ import { FaRegComment } from "react-icons/fa";
 import Detailsimg from "../assets/images/details.jpg";
 const Details = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <Container style={{ paddingTop: 20, paddingBottom: 30 }}>
       <Grid container spacing={4}>
@@ -182,6 +186,7 @@ const Details = () => {
           </div>
         </Grid>
         <Grid item xs={4}>
+          <div className="addiv" />
           <div className="recommendedcontainer">
             <div className="title">
               <Typography style={{ paddingBottom: 15 }}>Recent News</Typography>
@@ -191,7 +196,12 @@ const Details = () => {
                 <Grid item xs={5}>
                   <img src={RecommendedImg} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => window.location.replace("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes
@@ -217,7 +227,12 @@ const Details = () => {
                 <Grid item xs={5}>
                   <img src={RecommendedImg1} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => window.location.replace("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes
@@ -242,7 +257,12 @@ const Details = () => {
                 <Grid item xs={5}>
                   <img src={RecommendedImg} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => window.location.replace("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes
@@ -267,7 +287,12 @@ const Details = () => {
                 <Grid item xs={5}>
                   <img src={RecommendedImg1} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => window.location.replace("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes
@@ -292,7 +317,12 @@ const Details = () => {
                 <Grid item xs={5}>
                   <img src={RecommendedImg} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => window.location.replace("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes
@@ -317,7 +347,12 @@ const Details = () => {
                 <Grid item xs={5}>
                   <img src={RecommendedImg1} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => window.location.replace("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes
@@ -342,7 +377,12 @@ const Details = () => {
                 <Grid item xs={5}>
                   <img src={RecommendedImg} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => window.location.replace("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes
@@ -367,7 +407,12 @@ const Details = () => {
                 <Grid item xs={5}>
                   <img src={RecommendedImg1} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => window.location.replace("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes
@@ -392,7 +437,12 @@ const Details = () => {
                 <Grid item xs={5}>
                   <img src={RecommendedImg} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => window.location.replace("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes
@@ -417,7 +467,12 @@ const Details = () => {
                 <Grid item xs={5}>
                   <img src={RecommendedImg1} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => window.location.replace("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes
@@ -442,7 +497,12 @@ const Details = () => {
                 <Grid item xs={5}>
                   <img src={RecommendedImg} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => window.location.replace("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes

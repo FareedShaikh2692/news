@@ -13,8 +13,9 @@ import Loadmore4 from "../assets/images/loadmore4.jpg";
 import Loadmore5 from "../assets/images/loadmore5.jpg";
 import "../App.css";
 import { FaRegComment } from "react-icons/fa";
-
+import { useNavigate } from "react-router-dom";
 const Rightpanel = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="recommendedcontainer">
@@ -26,7 +27,7 @@ const Rightpanel = () => {
             <Grid item xs={5}>
               <img src={RecommendedImg} alt="recommendedimage" />
             </Grid>
-            <Grid item xs className="text">
+            <Grid item xs className="text" onClick={() => navigate("/details")}>
               <Typography style={{ marginBottom: 5 }}>
                 Fire breaks out from gas cylinder in Marayur: Family of three
                 miraculously escapes
@@ -51,7 +52,7 @@ const Rightpanel = () => {
             <Grid item xs={5}>
               <img src={RecommendedImg1} alt="recommendedimage1" />
             </Grid>
-            <Grid item xs className="text">
+            <Grid item xs className="text" onClick={() => navigate("/details")}>
               <Typography style={{ marginBottom: 5 }}>
                 Edavapathi – Omana Krishnapilla
               </Typography>
@@ -84,7 +85,12 @@ const Rightpanel = () => {
                 latest news
               </Typography>
             </Grid>
-            <Grid item xs={12} className="text">
+            <Grid
+              item
+              xs={12}
+              className="text"
+              onClick={() => navigate("/details")}
+            >
               <Typography style={{ marginBottom: 5 }}>
                 Bike riding: Newgen riders sentenced to two days of 'community
                 service'
@@ -112,7 +118,12 @@ const Rightpanel = () => {
                 latest news
               </Typography>
             </Grid>
-            <Grid item xs={12} className="text">
+            <Grid
+              item
+              xs={12}
+              className="text"
+              onClick={() => navigate("/details")}
+            >
               <Typography style={{ marginBottom: 5 }}>
                 The accused escaped by overturning an autorickshaw in cinema
                 style at Kumily Attappallam
@@ -140,7 +151,12 @@ const Rightpanel = () => {
                 idukki
               </Typography>
             </Grid>
-            <Grid item xs={12} className="text">
+            <Grid
+              item
+              xs={12}
+              className="text"
+              onClick={() => navigate("/details")}
+            >
               <Typography style={{ marginBottom: 5 }}>
                 No water but billed: Methotti residents are confused
               </Typography>
@@ -164,7 +180,11 @@ const Rightpanel = () => {
       <div className="title">
         <Typography style={{ paddingBottom: 15 }}>Science</Typography>
       </div>
-      <Grid container style={{ marginBottom: 30 }}>
+      <Grid
+        container
+        style={{ marginBottom: 30 }}
+        onClick={() => navigate("/details")}
+      >
         <Grid item xs>
           <div className="featuredstorynews">
             <img src={Loadmore4} alt="recommendedimage" height={180} />
@@ -207,7 +227,11 @@ const Rightpanel = () => {
           </Typography>
         </Grid>
       </Grid>
-      <Grid container style={{ marginBottom: 30 }}>
+      <Grid
+        container
+        style={{ marginBottom: 30 }}
+        onClick={() => navigate("/details")}
+      >
         <Grid item xs>
           <div className="featuredstorynews">
             <img src={Loadmore3} alt="recommendedimage" height={180} />
@@ -263,7 +287,7 @@ const Rightpanel = () => {
           <Grid item xs={5}>
             <img src={Loadmore5} alt="recommendedimage" />
           </Grid>
-          <Grid item xs className="text">
+          <Grid item xs className="text" onClick={() => navigate("/details")}>
             <Typography style={{ marginBottom: 5 }}>
               Fire breaks out from gas cylinder in Marayur: Family of three
               miraculously escapes
@@ -293,7 +317,7 @@ const Rightpanel = () => {
           <Grid item xs={5}>
             <img src={Loadmore5} alt="recommendedimage" />
           </Grid>
-          <Grid item xs className="text">
+          <Grid item xs className="text" onClick={() => navigate("/details")}>
             <Typography style={{ marginBottom: 5 }}>
               Fire breaks out from gas cylinder in Marayur: Family of three
               miraculously escapes
@@ -323,7 +347,7 @@ const Rightpanel = () => {
           <Grid item xs={5}>
             <img src={Loadmore5} alt="recommendedimage" />
           </Grid>
-          <Grid item xs className="text">
+          <Grid item xs className="text" onClick={() => navigate("/details")}>
             <Typography style={{ marginBottom: 5 }}>
               Fire breaks out from gas cylinder in Marayur: Family of three
               miraculously escapes
@@ -353,7 +377,7 @@ const Rightpanel = () => {
           <Grid item xs={5}>
             <img src={Loadmore5} alt="recommendedimage" />
           </Grid>
-          <Grid item xs className="text">
+          <Grid item xs className="text" onClick={() => navigate("/details")}>
             <Typography style={{ marginBottom: 5 }}>
               Fire breaks out from gas cylinder in Marayur: Family of three
               miraculously escapes
@@ -380,7 +404,11 @@ const Rightpanel = () => {
       <div className="title" style={{ marginTop: 40 }}>
         <Typography style={{ paddingBottom: 15 }}>Entertainment</Typography>
       </div>
-      <Grid container style={{ marginBottom: 30 }}>
+      <Grid
+        container
+        style={{ marginBottom: 30 }}
+        onClick={() => navigate("/details")}
+      >
         <Grid item xs>
           <div className="featuredstorynews">
             <img src={Loadmore4} alt="recommendedimage" height={180} />
@@ -423,7 +451,11 @@ const Rightpanel = () => {
           </Typography>
         </Grid>
       </Grid>
-      <Grid container style={{ marginBottom: 30 }}>
+      <Grid
+        container
+        style={{ marginBottom: 30 }}
+        onClick={() => navigate("/details")}
+      >
         <Grid item xs>
           <div className="featuredstorynews">
             <img src={Loadmore3} alt="recommendedimage" height={180} />
@@ -466,7 +498,11 @@ const Rightpanel = () => {
           </Typography>
         </Grid>
       </Grid>
-      <Grid container style={{ marginBottom: 30 }}>
+      <Grid
+        container
+        style={{ marginBottom: 30 }}
+        onClick={() => navigate("/details")}
+      >
         <Grid item xs>
           <div className="featuredstorynews">
             <img src={Loadmore3} alt="recommendedimage" height={180} />
@@ -519,7 +555,7 @@ const Rightpanel = () => {
             <Grid item xs={5}>
               <img src={RecommendedImg} alt="recommendedimage" />
             </Grid>
-            <Grid item xs className="text">
+            <Grid item xs className="text" onClick={() => navigate("/details")}>
               <Typography style={{ marginBottom: 5 }}>
                 Fire breaks out from gas cylinder in Marayur: Family of three
                 miraculously escapes
@@ -544,7 +580,7 @@ const Rightpanel = () => {
             <Grid item xs={5}>
               <img src={RecommendedImg1} alt="recommendedimage1" />
             </Grid>
-            <Grid item xs className="text">
+            <Grid item xs className="text" onClick={() => navigate("/details")}>
               <Typography style={{ marginBottom: 5 }}>
                 Edavapathi – Omana Krishnapilla
               </Typography>
@@ -570,14 +606,19 @@ const Rightpanel = () => {
           <Typography style={{ paddingBottom: 15 }}>Most Popular</Typography>
         </div>
         <div style={{ marginBottom: 25 }}>
-          <Grid container spacing={1}>
+          <Grid container spacing={1} onClick={() => navigate("/details")}>
             <Grid item xs={12} className="featuredstorynews">
               <img src={MostPopularimg} alt="recommendedimage" height={180} />
               <Typography style={{ bottom: 10, top: "auto", left: 15 }}>
                 latest news
               </Typography>
             </Grid>
-            <Grid item xs={12} className="text">
+            <Grid
+              item
+              xs={12}
+              className="text"
+              onClick={() => navigate("/details")}
+            >
               <Typography style={{ marginBottom: 5 }}>
                 Bike riding: Newgen riders sentenced to two days of 'community
                 service'
@@ -598,14 +639,19 @@ const Rightpanel = () => {
           </Grid>
         </div>
         <div style={{ marginBottom: 25 }}>
-          <Grid container spacing={1}>
+          <Grid container spacing={1} onClick={() => navigate("/details")}>
             <Grid item xs={12} className="featuredstorynews">
               <img src={MostPopularimg1} alt="recommendedimage" height={180} />
               <Typography style={{ bottom: 10, top: "auto", left: 15 }}>
                 latest news
               </Typography>
             </Grid>
-            <Grid item xs={12} className="text">
+            <Grid
+              item
+              xs={12}
+              className="text"
+              onClick={() => navigate("/details")}
+            >
               <Typography style={{ marginBottom: 5 }}>
                 The accused escaped by overturning an autorickshaw in cinema
                 style at Kumily Attappallam
@@ -626,14 +672,19 @@ const Rightpanel = () => {
           </Grid>
         </div>
         <div>
-          <Grid container spacing={1}>
+          <Grid container spacing={1} onClick={() => navigate("/details")}>
             <Grid item xs={12} className="featuredstorynews">
               <img src={MostPopularimg2} alt="recommendedimage" height={180} />
               <Typography style={{ bottom: 10, top: "auto", left: 15 }}>
                 idukki
               </Typography>
             </Grid>
-            <Grid item xs={12} className="text">
+            <Grid
+              item
+              xs={12}
+              className="text"
+              onClick={() => navigate("/details")}
+            >
               <Typography style={{ marginBottom: 5 }}>
                 No water but billed: Methotti residents are confused
               </Typography>

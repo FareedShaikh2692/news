@@ -406,7 +406,10 @@ const Leftpanel = () => {
           </div>
         </Grid>
         <Grid item xs>
-          <Typography className="featuredheadertext">
+          <Typography
+            className="featuredheadertext"
+            onClick={() => navigate("/details")}
+          >
             Another tiger attack in Munnar's plantation area: Cow died
           </Typography>
           <Typography className="featuredmiddletext">
@@ -441,7 +444,12 @@ const Leftpanel = () => {
             cow belonging to Shakti, a resident of Devikulam Estate Factory
             Division, was killed. As tigers used to kill livestock ...
           </Typography>
-          <Button className="featuredbutton">Read more</Button>
+          <Button
+            className="featuredbutton"
+            onClick={() => navigate("/details")}
+          >
+            Read more
+          </Button>
         </Grid>
       </Grid>
       <div className="loadmorecontainer" style={{ marginBottom: 20 }}>
@@ -459,8 +467,16 @@ const Leftpanel = () => {
                     {loadmoredata[index % 6].floatingtext}
                   </Typography>
                 </Grid>
-                <Grid item xs={12} className="text">
-                  <Typography style={{ marginBottom: 5 }}>
+                <Grid
+                  item
+                  xs={12}
+                  className="text"
+                  onClick={() => navigate("/details")}
+                >
+                  <Typography
+                    style={{ marginBottom: 5 }}
+                    onClick={() => navigate("/details")}
+                  >
                     {loadmoredata[index % 6].description}
                   </Typography>
                   <div className="bottomtext">
@@ -552,10 +568,18 @@ const Leftpanel = () => {
         </div>
       </div>
       <Grid container spacing={4} style={{ marginBottom: 20 }}>
-        <Grid item xs={6} className="businessimgcontainer">
+        <Grid
+          item
+          xs={6}
+          className="businessimgcontainer"
+          onClick={() => navigate("/details")}
+        >
           <img src={Loadmore} alt="load" />
           <div className="businessinnercontainer">
-            <Typography className="firsttext">
+            <Typography
+              className="firsttext"
+              onClick={() => navigate("/details")}
+            >
               Asylum case: Sister Sefi and Fr. Thomas Kottur was also released
             </Typography>
             <Typography className="secondtext">
@@ -564,10 +588,18 @@ const Leftpanel = () => {
             </Typography>
           </div>
         </Grid>
-        <Grid item xs={6} className="businessimgcontainer">
+        <Grid
+          item
+          xs={6}
+          className="businessimgcontainer"
+          onClick={() => navigate("/details")}
+        >
           <img src={Loadmore4} alt="load" />
           <div className="businessinnercontainer">
-            <Typography className="firsttext">
+            <Typography
+              className="firsttext"
+              onClick={() => navigate("/details")}
+            >
               Drunkenness: Father seriously injured by son's stabbing
             </Typography>
             <Typography className="secondtext">
@@ -585,7 +617,12 @@ const Leftpanel = () => {
                 <Grid item xs={5}>
                   <img src={Loadmore3} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => navigate("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Fire breaks out from gas cylinder in Marayur: Family of
                     three miraculously escapes
@@ -610,7 +647,12 @@ const Leftpanel = () => {
                 <Grid item xs={5}>
                   <img src={Loadmore1} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => navigate("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Kattappana resident arrested for trying to set fire to his
                     wife and 2 daughters
@@ -639,7 +681,12 @@ const Leftpanel = () => {
                 <Grid item xs={5}>
                   <img src={Loadmore2} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => navigate("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Department of Motor Vehicles with 'Operation Race' to catch
                     racers
@@ -664,7 +711,12 @@ const Leftpanel = () => {
                 <Grid item xs={5}>
                   <img src={Loadmore5} alt="recommendedimage" />
                 </Grid>
-                <Grid item xs className="text">
+                <Grid
+                  item
+                  xs
+                  className="text"
+                  onClick={() => navigate("/details")}
+                >
                   <Typography style={{ marginBottom: 5 }}>
                     Body of missing tourist found in Anakulam river
                   </Typography>
@@ -700,6 +752,7 @@ const Leftpanel = () => {
             </div>
             <Typography
               className="featuredheadertext"
+              onClick={() => navigate("/details")}
               style={{ fontSize: 20, marginTop: 15, marginBottom: 5 }}
             >
               Another tiger attack in Munnar's plantation area: Cow died
@@ -736,7 +789,12 @@ const Leftpanel = () => {
               A cow belonging to Shakti, a resident of Devikulam Estate Factory
               Division, was killed. As tigers used to kill livestock ...
             </Typography>
-            <Button className="featuredbutton">Read more</Button>
+            <Button
+              className="featuredbutton"
+              onClick={() => navigate("/details")}
+            >
+              Read more
+            </Button>
           </Grid>
           <Grid item xs={6} className="loadmorecontainer">
             {/* <Grid item xs={6}> */}
@@ -744,7 +802,12 @@ const Leftpanel = () => {
               <Grid item xs={5}>
                 <img src={Loadmore3} alt="recommendedimage" />
               </Grid>
-              <Grid item xs className="text">
+              <Grid
+                item
+                xs
+                className="text"
+                onClick={() => navigate("/details")}
+              >
                 <Typography style={{ marginBottom: 5 }}>
                   Fire breaks out from gas cylinder in Marayur: Family of three
                   miraculously escapes
@@ -767,7 +830,12 @@ const Leftpanel = () => {
               <Grid item xs={5}>
                 <img src={Loadmore3} alt="recommendedimage" />
               </Grid>
-              <Grid item xs className="text">
+              <Grid
+                item
+                xs
+                className="text"
+                onClick={() => navigate("/details")}
+              >
                 <Typography style={{ marginBottom: 5 }}>
                   Fire breaks out from gas cylinder in Marayur: Family of three
                   miraculously escapes
@@ -790,7 +858,12 @@ const Leftpanel = () => {
               <Grid item xs={5}>
                 <img src={Loadmore3} alt="recommendedimage" />
               </Grid>
-              <Grid item xs className="text">
+              <Grid
+                item
+                xs
+                className="text"
+                onClick={() => navigate("/details")}
+              >
                 <Typography style={{ marginBottom: 5 }}>
                   Fire breaks out from gas cylinder in Marayur: Family of three
                   miraculously escapes
@@ -813,7 +886,12 @@ const Leftpanel = () => {
               <Grid item xs={5}>
                 <img src={Loadmore3} alt="recommendedimage" />
               </Grid>
-              <Grid item xs className="text">
+              <Grid
+                item
+                xs
+                className="text"
+                onClick={() => navigate("/details")}
+              >
                 <Typography style={{ marginBottom: 5 }}>
                   Fire breaks out from gas cylinder in Marayur: Family of three
                   miraculously escapes
@@ -950,6 +1028,7 @@ const Leftpanel = () => {
         <Grid item xs={6}>
           <Typography
             className="featuredheadertext"
+            onClick={() => navigate("/details")}
             style={{ fontSize: 20, marginTop: 15, marginBottom: 5 }}
           >
             Another tiger attack in Munnar's plantation area: Cow died
@@ -986,7 +1065,12 @@ const Leftpanel = () => {
             cow belonging to Shakti, a resident of Devikulam Estate Factory
             Division, was killed. As tigers used to kill livestock ...
           </Typography>
-          <Button className="featuredbutton">Read more</Button>
+          <Button
+            className="featuredbutton"
+            onClick={() => navigate("/details")}
+          >
+            Read more
+          </Button>
         </Grid>
       </Grid>
       <Grid container spacing={3} style={{ marginBottom: 30 }}>
@@ -999,6 +1083,7 @@ const Leftpanel = () => {
         <Grid item xs={6}>
           <Typography
             className="featuredheadertext"
+            onClick={() => navigate("/details")}
             style={{ fontSize: 20, marginTop: 15, marginBottom: 5 }}
           >
             Another tiger attack in Munnar's plantation area: Cow died
@@ -1035,7 +1120,12 @@ const Leftpanel = () => {
             cow belonging to Shakti, a resident of Devikulam Estate Factory
             Division, was killed. As tigers used to kill livestock ...
           </Typography>
-          <Button className="featuredbutton">Read more</Button>
+          <Button
+            className="featuredbutton"
+            onClick={() => navigate("/details")}
+          >
+            Read more
+          </Button>
         </Grid>
       </Grid>
       <Grid container spacing={3} style={{ marginBottom: 30 }}>
@@ -1048,6 +1138,7 @@ const Leftpanel = () => {
         <Grid item xs={6}>
           <Typography
             className="featuredheadertext"
+            onClick={() => navigate("/details")}
             style={{ fontSize: 20, marginTop: 15, marginBottom: 5 }}
           >
             Another tiger attack in Munnar's plantation area: Cow died
@@ -1084,7 +1175,12 @@ const Leftpanel = () => {
             cow belonging to Shakti, a resident of Devikulam Estate Factory
             Division, was killed. As tigers used to kill livestock ...
           </Typography>
-          <Button className="featuredbutton">Read more</Button>
+          <Button
+            className="featuredbutton"
+            onClick={() => navigate("/details")}
+          >
+            Read more
+          </Button>
         </Grid>
       </Grid>
       <div className="title">
@@ -1105,6 +1201,7 @@ const Leftpanel = () => {
             >
               <Typography
                 className="firsttext"
+                onClick={() => navigate("/details")}
                 style={{
                   background: "transparent",
                   position: "unset",
@@ -1141,6 +1238,7 @@ const Leftpanel = () => {
             >
               <Typography
                 className="firsttext"
+                onClick={() => navigate("/details")}
                 style={{
                   background: "transparent",
                   position: "unset",
@@ -1179,6 +1277,7 @@ const Leftpanel = () => {
             >
               <Typography
                 className="firsttext"
+                onClick={() => navigate("/details")}
                 style={{
                   background: "transparent",
                   position: "unset",
@@ -1215,6 +1314,7 @@ const Leftpanel = () => {
             >
               <Typography
                 className="firsttext"
+                onClick={() => navigate("/details")}
                 style={{
                   background: "transparent",
                   position: "unset",
@@ -1252,6 +1352,7 @@ const Leftpanel = () => {
           <Grid item xs={6} style={{ marginBottom: 20 }}>
             <Typography
               className="featuredheadertext"
+              onClick={() => navigate("/details")}
               style={{ fontSize: 20, marginTop: 15, marginBottom: 5 }}
             >
               Another tiger attack in Munnar's plantation area: Cow died
@@ -1288,7 +1389,12 @@ const Leftpanel = () => {
               A cow belonging to Shakti, a resident of Devikulam Estate Factory
               Division, was killed. As tigers used to kill livestock ...
             </Typography>
-            <Button className="featuredbutton">Read more</Button>
+            <Button
+              className="featuredbutton"
+              onClick={() => navigate("/details")}
+            >
+              Read more
+            </Button>
           </Grid>
         </Grid>
         <Grid container spacing={3} style={{ marginBottom: 20 }}>
@@ -1298,7 +1404,12 @@ const Leftpanel = () => {
               <Grid item xs={5}>
                 <img src={Loadmore3} alt="recommendedimage" />
               </Grid>
-              <Grid item xs className="text">
+              <Grid
+                item
+                xs
+                className="text"
+                onClick={() => navigate("/details")}
+              >
                 <Typography style={{ marginBottom: 5 }}>
                   Fire breaks out from gas cylinder in Marayur: Family of three
                   miraculously escapes
@@ -1324,7 +1435,12 @@ const Leftpanel = () => {
               <Grid item xs={5}>
                 <img src={Loadmore3} alt="recommendedimage" />
               </Grid>
-              <Grid item xs className="text">
+              <Grid
+                item
+                xs
+                className="text"
+                onClick={() => navigate("/details")}
+              >
                 <Typography style={{ marginBottom: 5 }}>
                   Fire breaks out from gas cylinder in Marayur: Family of three
                   miraculously escapes
@@ -1352,7 +1468,12 @@ const Leftpanel = () => {
               <Grid item xs={5}>
                 <img src={Loadmore3} alt="recommendedimage" />
               </Grid>
-              <Grid item xs className="text">
+              <Grid
+                item
+                xs
+                className="text"
+                onClick={() => navigate("/details")}
+              >
                 <Typography style={{ marginBottom: 5 }}>
                   Fire breaks out from gas cylinder in Marayur: Family of three
                   miraculously escapes
@@ -1378,7 +1499,12 @@ const Leftpanel = () => {
               <Grid item xs={5}>
                 <img src={Loadmore3} alt="recommendedimage" />
               </Grid>
-              <Grid item xs className="text">
+              <Grid
+                item
+                xs
+                className="text"
+                onClick={() => navigate("/details")}
+              >
                 <Typography style={{ marginBottom: 5 }}>
                   Fire breaks out from gas cylinder in Marayur: Family of three
                   miraculously escapes
@@ -1442,6 +1568,7 @@ const Leftpanel = () => {
         <Grid item xs={6} style={{ marginBottom: 20 }}>
           <Typography
             className="featuredheadertext"
+            onClick={() => navigate("/details")}
             style={{ fontSize: 20, marginTop: 15, marginBottom: 5 }}
           >
             Another tiger attack in Munnar's plantation area: Cow died
@@ -1478,7 +1605,12 @@ const Leftpanel = () => {
             cow belonging to Shakti, a resident of Devikulam Estate Factory
             Division, was killed. As tigers used to kill livestock ...
           </Typography>
-          <Button className="featuredbutton">Read more</Button>
+          <Button
+            className="featuredbutton"
+            onClick={() => navigate("/details")}
+          >
+            Read more
+          </Button>
         </Grid>
       </Grid>
       <Grid container spacing={4} style={{ marginBottom: 30 }}>
@@ -1491,6 +1623,7 @@ const Leftpanel = () => {
         <Grid item xs={6} style={{ marginBottom: 20 }}>
           <Typography
             className="featuredheadertext"
+            onClick={() => navigate("/details")}
             style={{ fontSize: 20, marginTop: 15, marginBottom: 5 }}
           >
             Another tiger attack in Munnar's plantation area: Cow died
@@ -1527,7 +1660,12 @@ const Leftpanel = () => {
             cow belonging to Shakti, a resident of Devikulam Estate Factory
             Division, was killed. As tigers used to kill livestock ...
           </Typography>
-          <Button className="featuredbutton">Read more</Button>
+          <Button
+            className="featuredbutton"
+            onClick={() => navigate("/details")}
+          >
+            Read more
+          </Button>
         </Grid>
       </Grid>
       <Grid container spacing={4} style={{ marginBottom: 30 }}>
@@ -1540,6 +1678,7 @@ const Leftpanel = () => {
         <Grid item xs={6} style={{ marginBottom: 20 }}>
           <Typography
             className="featuredheadertext"
+            onClick={() => navigate("/details")}
             style={{ fontSize: 20, marginTop: 15, marginBottom: 5 }}
           >
             Another tiger attack in Munnar's plantation area: Cow died
@@ -1576,7 +1715,12 @@ const Leftpanel = () => {
             cow belonging to Shakti, a resident of Devikulam Estate Factory
             Division, was killed. As tigers used to kill livestock ...
           </Typography>
-          <Button className="featuredbutton">Read more</Button>
+          <Button
+            className="featuredbutton"
+            onClick={() => navigate("/details")}
+          >
+            Read more
+          </Button>
         </Grid>
       </Grid>
       <Grid container spacing={4} style={{ marginBottom: 30 }}>
@@ -1589,6 +1733,7 @@ const Leftpanel = () => {
         <Grid item xs={6} style={{ marginBottom: 20 }}>
           <Typography
             className="featuredheadertext"
+            onClick={() => navigate("/details")}
             style={{ fontSize: 20, marginTop: 15, marginBottom: 5 }}
           >
             Another tiger attack in Munnar's plantation area: Cow died
@@ -1625,7 +1770,12 @@ const Leftpanel = () => {
             cow belonging to Shakti, a resident of Devikulam Estate Factory
             Division, was killed. As tigers used to kill livestock ...
           </Typography>
-          <Button className="featuredbutton">Read more</Button>
+          <Button
+            className="featuredbutton"
+            onClick={() => navigate("/details")}
+          >
+            Read more
+          </Button>
         </Grid>
       </Grid>
       <Grid container spacing={4} style={{ marginBottom: 30 }}>
@@ -1638,6 +1788,7 @@ const Leftpanel = () => {
         <Grid item xs={6} style={{ marginBottom: 20 }}>
           <Typography
             className="featuredheadertext"
+            onClick={() => navigate("/details")}
             style={{ fontSize: 20, marginTop: 15, marginBottom: 5 }}
           >
             Another tiger attack in Munnar's plantation area: Cow died
@@ -1674,7 +1825,12 @@ const Leftpanel = () => {
             cow belonging to Shakti, a resident of Devikulam Estate Factory
             Division, was killed. As tigers used to kill livestock ...
           </Typography>
-          <Button className="featuredbutton">Read more</Button>
+          <Button
+            className="featuredbutton"
+            onClick={() => navigate("/details")}
+          >
+            Read more
+          </Button>
         </Grid>
       </Grid>
       <Grid container spacing={4} style={{ marginBottom: 30 }}>
@@ -1687,6 +1843,7 @@ const Leftpanel = () => {
         <Grid item xs={6} style={{ marginBottom: 20 }}>
           <Typography
             className="featuredheadertext"
+            onClick={() => navigate("/details")}
             style={{ fontSize: 20, marginTop: 15, marginBottom: 5 }}
           >
             Another tiger attack in Munnar's plantation area: Cow died
@@ -1723,7 +1880,12 @@ const Leftpanel = () => {
             cow belonging to Shakti, a resident of Devikulam Estate Factory
             Division, was killed. As tigers used to kill livestock ...
           </Typography>
-          <Button className="featuredbutton">Read more</Button>
+          <Button
+            className="featuredbutton"
+            onClick={() => navigate("/details")}
+          >
+            Read more
+          </Button>
         </Grid>
       </Grid>
     </>
